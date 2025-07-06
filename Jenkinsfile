@@ -15,7 +15,7 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
-        stage(Sonar Analysis){
+        stage('Sonar-Analysis'){
             environment {
                 scannerHome = tool 'sonarqube_scanner_tool'
             }
